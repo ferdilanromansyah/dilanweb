@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Piece Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="https://www.videezy.com/download/62637" type="video/mp4">
+    Browser Anda tidak mendukung video background.
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Kapal & Gelombang -->
+  <img src="kapal2-removebg-preview.png" alt="Straw Hat Ship" class="ship">
+  <div class="waves"></div>
+
+  <!-- Navbar di Atas -->
+  <header class="navbar">
+    <h2>☠ One Piece</h2>
+    <nav>
+      <a href="index.html">Prolog</a>
+      <a href="crew.html">Straw Hat Crew</a>
+      <a href="oda.html">Oda Sensei</a>
+      <a href="about.html">Tentang Website</a>
+    </nav>
+  </header>
+
+  <!-- Konten -->
+  <main class="content">
+    <h1>Prolog</h1>
+    <p>
+      Di era bajak laut, dunia dikejutkan oleh harta karun legendaris "One Piece" yang ditinggalkan oleh
+      Raja Bajak Laut Gol D. Roger. Banyak bajak laut berlayar ke lautan luas untuk menemukan harta tersebut
+      dan menjadi Raja Bajak Laut berikutnya.
+    </p>
+
+    <div class="crew-container" style="display:flex; flex-direction:column; align-items:center; gap:30px;">
+
+      <!-- Video Prolog di atas, ukuran besar -->
+      <div class="crew-card" style="width:100%; max-width:850px; margin:auto;">
+        <video controls style="width:100%; border-radius:15px; height:auto;">
+          <source src="video/One piece amv 30 detik __ stori wa one piece.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Baris foto sejajar dengan ukuran tetap -->
+      <div style="display:flex; justify-content:center; gap:25px; flex-wrap:wrap;">
+
+        <!-- Gambar 1 -->
+        <div class="crew-card" style="width:230px;">
+          <img src="mugiwara.jpeg" alt="Straw Hat" style="width:100%; height:230px; object-fit:cover; border-radius:12px;">
+          <h3>Awal Petualangan</h3>
+          <p>Momen ketika Luffy memulai perjalanan menuju Grand Line.</p>
+        </div>
+
+        <!-- Gambar 2 -->
+        <div class="crew-card" style="width:230px;">
+          <img src="Screenshot 2025-10-18 141627.png" alt="One Piece" style="width:100%; height:230px; object-fit:cover; border-radius:12px;">
+          <h3>Legenda One Piece</h3>
+          <p>Harta terbesar dalam sejarah yang menjadi tujuan seluruh bajak laut.</p>
+        </div>
+      </div>
+
+       <audio controls>
+            <source src="Nirvana - Smells Like Teen Spirit (Lyrics)(M4A_128K).mp3" type="audio/mp3 ">
+        </audio>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
